@@ -1,0 +1,628 @@
+<!DOCTYPE html><html lang="zh"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/app.f588656cc80a065e5f1e.css">code[class*=language-],pre[class*=language-]{color:#fff;background:none;text-shadow:0 -.1em .2em #000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}:not(pre)>code[class*=language-],pre[class*=language-]{background:#4d4033}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border:.3em solid #7a6652;border-radius:.5em;box-shadow:inset 1px 1px .5em #000}:not(pre)>code[class*=language-]{padding:.15em .2em .05em;border-radius:.3em;border:.13em solid #7a6652;box-shadow:inset 1px 1px .3em -.1em #000;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#998066}.namespace,.token.punctuation{opacity:.7}.token.boolean,.token.constant,.token.number,.token.property,.token.symbol,.token.tag{color:#d1949e}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#bde052}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f5b83d}.token.atrule,.token.attr-value,.token.keyword{color:#d1949e}.token.important,.token.regex{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.deleted{color:red}</style><style data-href="/component---src-templates-content-template-js.5b9815b7eff38446cec6.css">@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600);@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400);.course{position:relative;width:100%}.course p{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course p{margin-left:1rem}}.course p:not(:last-of-type){margin-bottom:1rem}@media (min-width:640px){.course h1{margin-left:3rem}}.course h2,.course h3,.course h4{padding-bottom:2rem}@media (min-width:640px){.course h2,.course h3,.course h4,.course table{margin-left:1rem}}.course ul{font-family:IBM Plex Sans,monospace}@media (min-width:640px){.course ul{margin-left:2.2rem}}.course h2:not(:first-of-type){margin-top:2rem}.course pre{margin:2rem 0;background-color:#33332d;color:#fff}.course em{font-family:Courier;font-style:normal;background-color:hsla(0,0%,88.2%,.6);padding:1px 5px 2px}.course img{border:11px solid transparent}.course .banner,.course .container{position:static}.course .letter{width:4rem;height:4rem;border-width:5px;border-style:solid;border-radius:2.5rem;text-align:center;margin:1rem;line-height:1.3em;-webkit-transform:translate(-1rem);transform:translate(-1rem)}@media (min-width:640px){.course .letter{-webkit-transform:translate(-3rem,4.5rem);transform:translate(-3rem,4.5rem)}}.course .letter,.course h1{font-size:2.3rem;font-weight:700}.course-content a,.tasks a{border:0;border-bottom-width:2px;border-style:solid;padding:2px}.course-content{max-width:100%}.tasks a{border-color:#33332d!important}.tasks a:hover{background-color:#fff!important;color:#000!important}.gatsby-highlight-code-line{background-color:hsla(0,0%,88.2%,.3);display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:1em}code[class*=language-],pre[class*=language-]{text-shadow:none}.arrow-go-up{width:36px;height:36px;position:fixed;bottom:5%;right:5%;z-index:99999;cursor:pointer}@media (max-width:639px){.arrow-go-up{right:10%}}.part-main__banner{background-position:50%;background-size:50%;padding-bottom:10%;background-repeat:no-repeat}@media (max-width:639px){.part-main__banner{background-position:top;background-size:70%;padding-bottom:30%!important}}.arrow__container{position:relative}.arrow__container:not():first-child{background:none;background-color:none}@media (min-width:640px){.arrow__container:not():first-child{border-left:none}.arrow__container:not():first-child:before{content:"";background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NzcuMTc1IDQ3Ny4xNzUiPjxwYXRoIGQ9Ik0zNjAuNzMxIDIyOS4wNzVsLTIyNS4xLTIyNS4xYy01LjMtNS4zLTEzLjgtNS4zLTE5LjEgMHMtNS4zIDEzLjggMCAxOS4xbDIxNS41IDIxNS41LTIxNS41IDIxNS41Yy01LjMgNS4zLTUuMyAxMy44IDAgMTkuMSAyLjYgMi42IDYuMSA0IDkuNSA0IDMuNCAwIDYuOS0xLjMgOS41LTRsMjI1LjEtMjI1LjFjNS4zLTUuMiA1LjMtMTMuOC4xLTE5eiIvPjwvc3ZnPg==) no-repeat;background-size:contain;position:absolute;top:0;left:0;height:100%;width:100%}}.arrows--horizontal{display:flex;position:relative;margin:0;align-items:flex-start}.arrow__wrapper{display:flex;justify-content:flex-start;align-items:center;margin:0}.arrow__wrapper:first-of-type{border-right:none;z-index:20}.arrow__wrapper:nth-of-type(n+2){margin-left:-4rem;z-index:10}.arrow__wrapper:nth-of-type(n+2) .arrow__rectangle{border-left:none;padding-left:4rem}.arrow__wrapper:nth-of-type(3){z-index:5}.arrow__wrapper:hover .arrow__point,.arrow__wrapper:hover .arrow__rectangle,.arrow__wrapper:hover .arrow__rectangle>a{background-color:#33332d!important;color:#fff!important}.arrow__rectangle{padding:1rem;justify-content:center;align-items:center;border:2px solid #33332d;border-right:none;z-index:2;overflow:hidden;font-family:IBM Plex Sans,monospace;position:relative}@media (max-width:991px){.arrow__rectangle{font-size:1rem}}.arrow__rectangle .bold{font-weight:600}.arrow__rectangle--thick-border{border:3px solid #33332d;border-right:none}.arrow__point{padding:1.25rem;border:2px solid #33332d;border-bottom:none;border-left:none;-webkit-transform:translate(-1.3rem) rotate(45deg);transform:translate(-1.3rem) rotate(45deg);z-index:1;overflow:hidden}.arrow__point--thick-border{border:3px solid #33332d;border-bottom:none;border-left:none}.arrow__wrapper--stacked{display:flex;justify-content:flex-start;align-items:center;margin:auto auto auto 0}@media (max-width:639px){.arrow__wrapper--stacked .arrow__rectangle{border:none;background-color:transparent!important;padding:0;font-size:1rem;justify-content:unset}.arrow__wrapper--stacked .arrow__rectangle>p>span{border-bottom:1px solid #33332d;margin:auto}.arrow__wrapper--stacked .arrow__rectangle>p>span:hover{background-color:#fff!important;color:#000}.arrow__wrapper--stacked .arrow__point{display:none}}.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:1rem}@media (min-width:640px){.arrow__wrapper--stacked:nth-of-type(n+2){margin-top:-2px}}.arrow__wrapper--stacked .arrow__rectangle{position:relative}@media (min-width:640px){.arrow__wrapper--stacked .arrow__rectangle{padding:1.25rem}}@media (min-width:992px){.arrow__wrapper--stacked .arrow__rectangle{padding:1rem}}.arrow__wrapper--stacked .arrow__point{padding:1.08rem;margin-left:2px}@media (min-width:640px){.arrow__wrapper--stacked .arrow__point{margin-left:unset;padding:1.25rem}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow__point,.arrow__wrapper--stacked:hover .arrow__rectangle{background-color:#33332d!important}}@media (min-width:640px){.arrow__wrapper--stacked:hover .arrow--stacked-letter,.arrow__wrapper--stacked:hover .arrow--stacked-title{color:#fff}}.arrow--stacked-title{font-family:IBM Plex Mono,monospace}@media (min-width:640px){.arrow--stacked-title{white-space:nowrap}}.arrow__container--with-link{width:100%!important}@media (max-width:639px){.breadcrumb .arrow__wrapper{display:none}}.breadcrumb .arrow__wrapper:hover .arrow__point,.breadcrumb .arrow__wrapper:hover .arrow__rectangle{background-color:#33332d!important}.breadcrumb .arrow__wrapper:hover .arrow--stacked-letter,.breadcrumb .arrow__wrapper:hover .arrow--stacked-title{color:#fff}.breadcrumb .arrow__rectangle{position:relative}@media (max-width:639px){.breadcrumb .arrow__rectangle{border:none;padding:0;font-size:.7rem;white-space:nowrap;background-color:transparent!important;color:#33332d}}@media (max-width:639px){.breadcrumb .arrow__point{display:none}}.element--flex{display:flex;flex-wrap:wrap}.element--space-around{justify-content:space-around}.element--space-between{justify-content:space-between}.element--column{flex-direction:column}.element--centered{align-items:center;justify-content:center!important}@media (min-width:992px){.element--centered-in-desktop{align-items:center;justify-content:center!important}}@media (min-width:992px){.element--horizontal-half{width:45%}}.element--auto-margin{margin:auto}.element--auto-bottom-margin{margin-bottom:auto}.element--flex-start{align-content:flex-start}.element--no-wrap{flex-wrap:nowrap}.element--relative{position:relative!important}.banner{display:flex;width:100%;align-items:center;position:relative;padding:2rem 0;background-color:#e1e1e1}@media (min-width:992px){.banner{padding:3.444rem 3.444rem 4.444rem}}.edit-link>span{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:inherit}#footer{margin-top:auto}@media (min-width:992px){#footer{align-items:center}}#footer a:hover{background-color:transparent!important}#footer .footer__navigation{display:none}@media (max-width:1199px){#footer .footer__navigation{width:100%;display:block}#footer .footer__navigation-link-container{display:flex;flex-direction:column}}#footer .footer__navigation-link{font-size:1rem;line-height:18px;white-space:nowrap;font-family:IBM Plex Sans,monospace;margin-left:0!important;margin-right:auto}@media (max-width:639px){#footer .footer__navigation-link{line-height:8px}}#footer .footer__navigation-link:hover{color:#fff!important;background-color:#33332d!important}#footer .footer__navigation-link:nth-of-type(n+2){margin-top:2.142rem}@media (min-width:1200px){#footer .footer__navigation{flex-direction:row;flex-wrap:nowrap;justify-content:flex-end}#footer .footer__navigation-link{margin-top:0!important;margin-bottom:auto}#footer .footer__navigation-link:nth-of-type(n+1){margin-right:2.877rem}#footer .footer__navigation-link:last-of-type{margin-right:0!important}}.image__content{position:absolute;top:0;left:0;height:100%;width:100%;-o-object-fit:cover;object-fit:cover}.image--contain .image__content{-o-object-fit:contain;object-fit:contain}.image{overflow:hidden;width:100%;position:relative}@media (min-width:992px){.image{width:40%}}.image .image__container{height:0;position:relative;width:100%;padding-bottom:89.0625%}.image--circle{border-radius:50%}.image--circle .image__content{background-color:#e1e1e1}.image--square-big{width:100%}.image--square-big .image__container{width:100%;padding-bottom:100%}.image--extra-small{width:8%}.image--extra-small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--extra-small{width:calc(33.33333% - 1rem)}}.image--small{width:15%}.image--small .image__container{width:100%;padding-bottom:100%}@media (max-width:639px){.image--small{width:calc(33.33333% - 1rem)}}.image--medium{width:50%}.image--medium .image__container{width:100%;padding-bottom:71.25%}.image--large{width:100%}@media (min-width:992px){.image--large{width:60%}}.image--large .image__container{padding-bottom:59.37%;width:100%}.image--full-width{width:100%}.image--full-width .image__container{padding-bottom:59.37%;width:100%}.image--actual-size{width:100%}.image--actual-size .image__container{height:0;position:relative;width:100%;padding-bottom:60%}.navigation{z-index:2;list-style:none;opacity:0;display:none;margin:0;padding:5%;flex-direction:column;justify-content:center;align-items:center;background:#e1e1e1;position:fixed;top:8%;right:5%;transition:opacity .3s ease-in-out;font-weight:200}@media (min-width:1200px){.navigation{display:flex;opacity:1;padding:0;font-weight:400;position:static;background:none;overflow:hidden;flex-direction:row}}@media (max-width:1199px){.navigation__wrapper .language-switcher{margin:20px 0 0}}@media (min-width:1200px){.navigation__wrapper{flex-grow:100}}.navigation__toggle{z-index:3;position:absolute;top:0;right:0;width:50px;height:40px;cursor:pointer;border:none;background:none;outline:none;border-radius:4px}@media (min-width:1200px){.navigation__toggle{display:none}}.navigation__mobile-logo{display:none}.navigation__toggle-icon{top:8px;left:10px}.navigation__toggle-icon,.navigation__toggle-icon:after,.navigation__toggle-icon:before{position:absolute;width:30px;height:3px;transition:all .3s ease;border-radius:4px;background-color:#33332d}.navigation__toggle-icon:after,.navigation__toggle-icon:before{content:"";display:block}.navigation__toggle-icon:before{top:10px}.navigation__toggle-icon:after{top:20px}.is-open--navigation{overflow:hidden;height:100vh}.is-open--navigation .navigation{opacity:1;display:unset}.is-open--navigation .navigation:before{content:"";background-color:#e1e1e1;position:absolute;width:25px;height:25px;top:-3px;right:13px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.is-open--navigation .navigation__mobile-logo{display:block;width:30px;height:30px;position:absolute;top:47px;left:5%}@media (min-width:1200px){.is-open--navigation .navigation__mobile-logo{display:none}}.is-open--navigation .navigation__toggle-icon{-webkit-transform:translate3d(0,10px,0) rotate(45deg);transform:translate3d(0,10px,0) rotate(45deg)}.is-open--navigation .navigation__toggle-icon,.is-open--navigation .navigation__toggle-icon:after,.is-open--navigation .navigation__toggle-icon:before{background:#33332d}.is-open--navigation .navigation__toggle-icon:before{-webkit-transform:rotate(-45deg) translate3d(-5.71429px,-6px,0);transform:rotate(-45deg) translate3d(-5.71429px,-6px,0);opacity:0}.is-open--navigation .navigation__toggle-icon:after{-webkit-transform:translate3d(0,-19px,0) rotate(-90deg);transform:translate3d(0,-19px,0) rotate(-90deg)}.navigation__item{margin:22px 0;white-space:nowrap}.navigation__item:first-of-type{margin:0 0 22px}.navigation__item:last-of-type{margin:22px 0 0}@media (min-width:1200px){.navigation__item{margin:0 30px;padding:0!important}.navigation__item:first-of-type{margin:0 30px 0 2rem}.navigation__item:last-of-type{margin:0 0 0 30px}}.language-switcher{margin-left:auto;display:flex;width:96px;justify-content:space-between;text-decoration:none}.language-switcher a,.language-switcher span{padding:1px 3px;text-transform:uppercase;border-radius:5px;font-weight:500}.language-switcher a{cursor:pointer;margin:1px}.language-switcher a:hover{background-color:#33332d!important;color:#fff!important}.language-switcher__active-language{border:1px solid #33332d!important}html{font-family:IBM Plex Mono,monospace;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:IBM Plex Mono,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em IBM Plex Mono,monospace;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:IBM Plex Mono,monospace;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{margin:2rem 0 -.5rem;font-size:1.38316rem}h3,h4{padding:0;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{margin:2rem 0 -1rem;font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:IBM Plex Mono,monospace;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{padding:0;margin:0 1.45rem 1.45rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}body,html{margin:0;padding:0;font-family:IBM Plex Mono,monospace;font-weight:500;color:#33332d;font-size:14px;line-height:1.555rem}@media (min-width:992px){body,html{font-size:18px}}.main-wrapper{min-height:100vh;display:flex;flex-direction:column}p{margin:0;text-align:left;line-height:1.5em}a,p{color:#33332d}a{text-decoration:none}.link a{border-bottom:2px solid #e1e1e1}.link a:hover{background-color:#e1e1e1}.container{position:relative;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;width:90%;max-width:1200px}@media (max-width:639px){.container{padding:0 20px}}@media (min-width:992px){.container--right{margin-right:5%;width:54%;max-width:719.9856px}}@media (min-width:992px) and (min-width:1200px){.container--right{margin-right:calc((100% - 1200px)/2)}}.hidden{display:none!important}.centered{text-align:center}@media (max-width:639px){.centered--mobile{justify-content:center;align-content:center;align-items:center}}.spacing{margin-top:2rem}@media (max-width:992px) and (min-width:640px){.spacing--tablet{margin-top:5rem!important}}@media (min-width:992px){.spacing{margin-top:5rem}}.spacing--small{margin-top:1rem}@media (min-width:992px){.spacing--small{margin-top:3.444rem}}.spacing--large{margin-top:4rem}@media (min-width:992px){.spacing--large{margin-top:10rem}}.spacing--extra-large{margin-top:4rem}@media (min-width:992px){.spacing--extra-large{margin-top:20rem}}.spacing--after{margin-bottom:2rem}@media (min-width:992px){.spacing--after{margin-bottom:5rem}}@media (max-width:639px){.spacing--after--mobile{margin-bottom:5rem}}@media (min-width:992px){.spacing--after-small{margin-bottom:2.5rem}}.spacing--after-large{margin-bottom:4rem}@media (min-width:992px){.spacing--after-large{margin-bottom:10rem}}@media (max-width:991px){.spacing--mobile{margin-top:2rem}}@media (max-width:1199px){.spacing--mobile--small{margin-top:1.5rem}}@media (max-width:1199px){.spacing--mobile--large{margin-top:3rem}}.col-1{width:100%}@media (min-width:992px){.col-1{width:10%}}.col-2{width:100%}@media (min-width:992px){.col-2{width:20%}}.col-3{width:100%}@media (min-width:992px){.col-3{width:30%}}.col-4{width:100%}@media (min-width:992px){.col-4{width:40%}}.col-5{width:100%}@media (min-width:992px){.col-5{width:50%}}.col-6{width:100%}@media (min-width:992px){.col-6{width:60%}}.col-7{width:100%}@media (min-width:992px){.col-7{width:70%}}.col-8{width:100%}@media (min-width:992px){.col-8{width:80%}}.col-9{width:100%}@media (min-width:992px){.col-9{width:90%}}.col-10{width:100%}@media (min-width:992px){.col-10{width:100%}}@media (min-width:992px){.push-right-1{margin-left:10%}.push-right-2{margin-left:20%}.push-right-3{margin-left:30%}.push-right-4{margin-left:40%}.push-right-5{margin-left:50%}.push-left-1{margin-right:10%}.push-left-2{margin-right:20%}.push-left-3{margin-right:30%}.push-left-4{margin-right:40%}.push-left-5{margin-right:50%}.push-left{margin-right:auto}.push-right{margin-left:auto}}@media (max-width:639px){.col-1--mobile{width:10%!important}.col-2--mobile{width:20%!important}.col-3--mobile{width:30%!important}.col-4--mobile{width:40%!important}.col-5--mobile{width:50%!important}.col-6--mobile{width:60%!important}.col-7--mobile{width:70%!important}.col-8--mobile{width:80%!important}.col-9--mobile{width:90%!important}.col-10--mobile{width:100%!important}.push-right-1--mobile{margin-left:10%!important}.push-right-2--mobile{margin-left:20%!important}.push-right-3--mobile{margin-left:30%!important}.push-right-4--mobile{margin-left:40%!important}.push-right-5--mobile{margin-left:50%!important}.push-left-1--mobile{margin-right:10%!important}.push-left-2--mobile{margin-right:20%!important}.push-left-3--mobile{margin-right:30%!important}.push-left-4--mobile{margin-right:40%!important}.push-left-5--mobile{margin-right:50%!important}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}@media (max-width:1199px){.col-1--tablet{width:10%}.col-2--tablet{width:20%}.col-3--tablet{width:30%}.col-4--tablet{width:40%}.col-5--tablet{width:50%}.col-6--tablet{width:60%}.col-7--tablet{width:70%}.col-8--tablet{width:80%}.col-9--tablet{width:90%}.col-10--tablet{width:100%}.order-0--tablet{order:0}.order-1--tablet{order:1}.order-2--tablet{order:2}.order-3--tablet{order:3}.order-4--tablet{order:4}.order-5--tablet{order:5}.order-0--mobile{order:0}.order-1--mobile{order:1}.order-2--mobile{order:2}.order-3--mobile{order:3}.order-4--mobile{order:4}.order-5--mobile{order:5}.hidden--mobile{display:none}}.centered-vertically{display:flex;flex-direction:column;justify-content:center}.nav-item-hover{text-decoration:none;color:#33332d;font-weight:500;padding:.2em}@media (min-width:640px){.nav-item-hover{font-weight:600}}.nav-item-hover:active,.nav-item-hover:focus,.nav-item-hover:hover{color:#fff;background-color:#33332d!important}.nav-item-hover:active,.nav-item-hover:focus{outline:2px solid #706be4}.flex-fix-aligning:after,.flex-fix-aligning:before{content:"";width:30%;order:2}.index__main-title{font-size:1.571rem}@media (min-width:992px){.index__main-title{font-size:3rem}}.auto-bottom-margin{margin-bottom:auto}@media (min-width:992px){.absolute-top-right--desktop{position:absolute;top:0;right:0}}@media (min-width:640px){.frontpage__hero .image{top:-2em}}@media (min-width:992px){.frontpage__hero{flex-direction:column}.frontpage__hero .image{top:4em}}.heading-font{font-family:IBM Plex Sans,monospace}.about__challenge-button{box-shadow:-3px 5px #33332d;padding:.6rem 1rem;border:3px solid #33332d;font-weight:600}.about__challenge-button:hover{background-color:#33332d;color:#fff;cursor:pointer}.about__challenge-button--turquoise{background-color:#82f7eb}@media (max-width:1199px){.space-between--mobile{justify-content:space-between}}.challenge__banner{display:flex;justify-content:center;margin-bottom:-70px}@media (min-width:640px){.challenge__banner{-webkit-transform:translateY(-10px);transform:translateY(-10px)}}@media (min-width:1200px){.challenge__banner{margin-bottom:-370px}}.challenge__banner .image{margin:0;width:70%;-webkit-transform:translateY(-25%);transform:translateY(-25%)}@media (min-width:640px){.challenge__banner .image{-webkit-transform:translateY(-10%);transform:translateY(-10%)}}@media (min-width:1200px){.challenge__banner .image{-webkit-transform:translateY(-30%);transform:translateY(-30%)}}.header{position:-webkit-sticky;position:sticky;z-index:9999999999;top:0;box-sizing:border-box;width:100%;padding-top:1.444rem;padding-bottom:1rem;transition:all .2s ease-in-out}.header--small{pointer-events:none}.header__logo{margin:0 10px;pointer-events:auto}.triple-border{position:relative;padding:2px;border-radius:5px 0;transition:color .1s ease-in-out,background-color .1s ease-in-out}.triple-border:after,.triple-border:before{z-index:2;content:"";border:2px solid #33332d;border-radius:5px;position:absolute;width:calc(100% + 5px);height:calc(100% + 5px)}.triple-border:before{left:0;top:0}.triple-border:after{bottom:0;right:0}.triple-border__container{position:relative;overflow:hidden;border-radius:3px 0}.triple-border--large-margin{margin:13px;padding:3px}.triple-border--large-margin:after,.triple-border--large-margin:before{content:"";border-width:3px;border-radius:13px;width:calc(100% + 13px);height:calc(100% + 13px)}.triple-border--large-margin .triple-border__container{border-radius:10px 0}.triple-border__logo{padding:.2rem;font-size:1.111rem;font-weight:600}.triple-border__return-tasks{font-size:.9rem;padding:1rem .2rem}.prev-next__container .separator{display:none}@media (max-width:639px){.prev-next__container .separator{display:block;background-color:#33332d;width:2px!important}}.prev-next__container .prev b,.prev-next__container .prev p{text-align:right}@media (max-width:639px){.prev-next__container .prev p:before{content:"<";margin-right:1rem}}@media (max-width:639px){.prev-next__container .next p:after{content:">";margin-left:1rem}}.scroll-navigation{display:none;padding-right:1rem;z-index:199}@media (min-width:992px){.scroll-navigation{display:block;font-size:16px;position:absolute;width:30%;left:0;top:198px}}.scroll-navigation li{list-style-type:none}.scroll-navigation li:hover{cursor:pointer}.scroll-navigation li:hover a{background-color:#33332d;color:#fff!important}.scroll-navigation li:before{content:"-"}.left-navigation-link{padding-left:1.2rem;text-indent:-1.2rem;display:block}.left-navigation-link:hover{background-color:#33332d!important;color:#fff!important}.level-h1{font-weight:700;padding-left:2.8rem;text-indent:-2.8rem}.level-h2{padding-left:1.6rem;text-indent:-1.6rem}.accordion__container{margin-bottom:1rem}.accordion__title{padding-left:2.149rem!important;padding-right:2.149rem!important;font-size:1.111rem!important;font-weight:600}.accordion{background-color:#fff;border:3px solid #33332d;border-radius:5px;color:#444;cursor:pointer;padding:1rem;width:100%;text-align:left;outline:none;font-size:15px;transition:max-width .4s}.accordion:hover,.active{background-color:#e1e1e1}.accordion:after{content:"+";font-size:1.5rem;float:right;margin-left:5px}.active{border-color:#fff}.active:after{content:"-";font-size:1.5rem}.panel{background-color:#fff;transition:height .3s;transition-timing-function:ease-in-out;overflow:hidden}.accordion--side-navigation{width:100%;margin-left:unset}.accordion--side-navigation .accordion{border:none;padding:0!important;background-color:transparent!important;color:#33332d!important;border-radius:0}.accordion--side-navigation .accordion__title{font-size:16px!important;font-weight:unset;background-color:transparent}.accordion--side-navigation .accordion__title:hover{background-color:#33332d!important;color:#fff!important}.accordion--side-navigation .panel{padding:1rem 0 0!important;background-color:transparent}.accordion--side-navigation .panel ul{margin-left:1rem}.accordion--side-navigation .accordion:hover,.accordion--side-navigation .active{background-color:#33332d;color:#fff}.accordion--side-navigation .accordion:after,.accordion--side-navigation .active:after{content:""}.body-text:not(:last-of-type){margin-bottom:2.5rem}.body-text__title{color:#33332d;font-size:1.44rem;line-height:1.25em;font-weight:700;margin:0;position:relative;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.body-text__content:not(:last-of-type){padding-bottom:2em}.bold{font-weight:700}.body-text--no-padding{padding:0!important}@media (min-width:640px){.companies__main-title .body-text__title{font-size:3rem}}.challenge-title{font-size:1.44rem}.sub-header{color:#33332d;font-family:IBM Plex Mono,monospace;padding-bottom:1.357rem}@media (min-width:992px){.sub-header{padding-bottom:2.333rem}}</style><meta name="generator" content="Gatsby 2.0.53"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><title data-react-helmet="true">Fullstack part0 | </title><meta data-react-helmet="true" name="description" content=""/><meta data-react-helmet="true" property="og:title" content="Fullstack part0 | "/><meta data-react-helmet="true" property="og:description" content=""/><meta data-react-helmet="true" name="og:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Houston Inc. Consulting oy"/><meta data-react-helmet="true" name="twitter:title" content="Fullstack part0 | "/><meta data-react-helmet="true" name="twitter:description" content=""/><meta data-react-helmet="true" name="twitter:image" content="/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg"/><meta data-react-helmet="true" name="google-site-verification" content="ds9pQKiK3kjhRSHHbf5ccoG-oJggn7Lq4A8uHxM3Mkw"/><meta data-react-helmet="true" name="keywords" content="fullstack, Full stack -websovelluskehitys, course, helsingin yliopisto, tietojenkäsittelytieteen osasto, mooc, mooc.fi, full stack, full stack open, web-sovelluskehitys, web, houston, houston inc, websovelluskehitys, web-sovellus, React, Redux, Node.js, Node, MongoDB, GraphQL, REST, REST api, single page -sovellus, ohjelmointi, university of helsinki, department of computer science, web development, software development, web, web application, single page app, programming, , "/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#e1e1e1"/><link rel="canonical" href="https://fullstackopen.com/zh/part0/web_应用的基础设施" data-baseprotocol="https:" data-basehost="fullstackopen.com"/><link as="script" rel="preload" href="/app-dbdb69583e4e0882e26f.js"/><link as="script" rel="preload" href="/component---src-templates-content-template-js-565726ad77dd2a7cbd59.js"/><link as="script" rel="preload" href="/0-7cc0090a88faee2ea8c5.js"/><link as="script" rel="preload" href="/27-54c17c6fd292fad28b57.js"/><link as="script" rel="preload" href="/3-e6eadd5caaf780c27e9b.js"/><link as="script" rel="preload" href="/1-401b18a85cef7ebf689f.js"/><link as="script" rel="preload" href="/webpack-runtime-8aefae32aca239e39749.js"/><link rel="preload" href="/static/d/159/path---zh-part-0-web-应用的基础设施-81-b-7b8-XhHou5tZNOZfKoVq6jf1kObxva0.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="main-wrapper"><div class="header " style="background-color:white"><div class="container" style="align-items:center;justify-content:flex-start"><a class="header__logo" href="/"><div class="triple-border nav-item-hover " style="padding:0.2em"><div class="triple-border__container triple-border__logo" style="background-color:transparent;z-index:10">{() =&gt; fs}</div></div></a><div class="navigation__wrapper "><button aria-label="Navigation menu" aria-expanded="false" class="navigation__toggle"><div class="navigation__toggle-icon"></div></button><nav><ul class="navigation"><li class="navigation__item "><a class="nav-item-hover" href="/about">Kurssista</a></li><li class="navigation__item "><a class="nav-item-hover" href="/#course-contents">Kurssin sisältö</a></li><li class="navigation__item "><a class="nav-item-hover" href="/faq">FAQ</a></li><li class="navigation__item "><a class="nav-item-hover" href="/companies">Kurssilla mukana</a></li><div class="language-switcher"><span class="language-switcher__active-language">fi</span><div class="language-switcher__language"><a href="/en">en</a></div><div class="language-switcher__language"><a href="/zh">zh</a></div></div></ul></nav></div></div></div><div class="course-container spacing--after"><div class="banner part-main__banner spacing--mobile--small" style="background-image:url(/static/part-0-b9999ec785b2c3bc6b8d3ef5d3537538.svg);background-color:#B2BBF0"><div class="container spacing--after"><div class="col-10 spacing--after"><div class="arrow__container arrows--horizontal breadcrumb"><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#B2BBF0;color:#33332d"><a href="/zh/#course-contents">Fullstack</a></div><div class="arrow__point " style="background-color:#B2BBF0;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#B2BBF0;color:#33332d"><a href="/zh/part0">part 0</a></div><div class="arrow__point " style="background-color:#B2BBF0;color:#33332d"></div></div><div class="arrow__wrapper"><div class="arrow__rectangle  " style="background-color:#33332d;color:white">Web 应用的基础设施</div><div class="arrow__point " style="background-color:#33332d;color:white"></div></div></div></div></div></div><div class="course "><div class="container element--flex element--relative"><div class="scroll-navigation col-2 spacing element--flex element--column" tag="ul"><a class="left-navigation-link" style="border-color:#B2BBF0" href="/zh/part0/基础知识">a 基础知识</a><div class="accordion__container col-8 push-right-1 accordion--side-navigation"><button class="accordion accordion__title  " style="background-color:#B2BBF0;border-color:#B2BBF0">b Web 应用的基础设施</button><div class="panel" style="padding:;max-height:0;transition:max-height 0.2s ease-out"><ul></ul></div></div></div><div class="course-content col-6 push-right-3 element--auto-bottom-margin"><p class="col-1 letter" style="border-color:#B2BBF0">b</p><h1 class="sub-header ">Web 应用的基础设施</h1></div></div><div class="container"><div class="course-content col-6 push-right-3">
+<!-- -->
+<!-- -->
+<p>在我们正式开始编程之前，我们先简单看一个样例应用<a href="https://fullstack-exampleapp.herokuapp.com/">https://fullstack-exampleapp.herokuapp.com/</a>，了解 一些 web 开发的基本原则。 该应用的芬兰语版本可以在 <a href="https://fullstack-example.now.sh">https://fullstack-example.now.sh</a> 网站上找到。 你可以使用任何一种。</p>
+<!-- -->
+<!-- -->
+<p>这些应用只是为了演示本课程需要讲到的一些基本概念，绝不是 web 应用的开发标杆。 相反，它展示了一些陈旧的 web 开发技术，而这些技术在今天甚至可以被视作糟糕的实践。</p>
+<!-- -->
+<p>我们将在<a href="/zh/part1">第1章</a>正式讲推荐的编码风格。</p>
+<!-- -->
+<p>现在以及接下来的课程都使用 Chrome 浏览器。</p>
+<!-- -->
+<p>在浏览器上打开这个<a href="">示例应用</a>。应用加载通常需要等一会儿。</p>
+<!-- -->
+<!-- -->
+<p>Web 开发第一规则: 始终在浏览器上打开你的开发者控制台。 在 macOS 上，按 <code class="language-text">F12</code> 或者 <code class="language-text">option-cmd-i</code> 打开控制台。 在 Windows 上，按 <code class="language-text">F12</code> 或 <code class="language-text">ctrl-shift-i</code>打开控制台。</p>
+<!-- -->
+<p>在继续课程之前，确保搞清楚如何在你的电脑上打开开发者控制台(如果必要的话请谷歌) ，并记得在开发 web 应用时始终保持它是开着的。</p>
+<!-- -->
+<p>开发者控制台长这样：
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/aaaefdadeccea5768728b3cdd41fd8f2/14be6/1e.png"/></picture></p>
+<!-- -->
+<p>请确保打开 Network 标签页，如图所示，选中 Disable cache 选项。 保存日志（Preserve log）选项也很有用: 它能够在重新加载页面时保存应用所打出日志。</p>
+<!-- -->
+<p>虽然在入门介绍中我们常使用网络（Network）标签，但开发而言最重要的标签是控制台（<i>Console</i>）。</p>
+<h3>HTTP GET</h3>
+<!-- -->
+<p>服务器和 web 浏览器使用 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP</a> 协议相互通信。 “网络（Network）”选项卡能够显示浏览器和服务器之间是如何通信的。</p>
+<!-- -->
+<p>当你重新加载页面(在浏览器中按 F5 键或者 ↺ 按钮) ，控制台会显示两个事件:</p>
+<!-- -->
+<!-- -->
+<ul>
+<li>浏览器会从服务器中获取<i>fullstack-exampleapp.herokuapp.com/</i> 页面的内容</li>
+<li>然后下载图像 <i>kuva.png</i></li>
+</ul>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/af6f88822db737cac2ea80d9343756fc/14be6/2e.png"/></picture>
+<!-- -->
+<p>在小屏幕上，您可能需要拉大控制台窗口才能看到这些内容。</p>
+<!-- -->
+<p>点击第一个事件会显示更多关于本次请求的细节</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/ddcd5afaeabfc1b0e8a4325bfeff90ee/14be6/3e.png"/></picture>
+<!-- -->
+<p>上半部分，General 中的内容，说明了浏览器使用 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET</a> 方法向地址 <a href="https://fullstack-exampleapp.herokuapp.com/">https://fullstack-exampleapp.herokuapp.com/</a> 发送了一个请求，并且请求成功，因为服务器响应的状态码为 200。</p>
+<!-- -->
+<p>浏览器的请求（request）和服务器的响应（response）有一些<a href="https://en.wikipedia.org/wiki/List_of_HTTP_header_fields">Headers头</a>信息:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/5e6569d4ad80edce4a03a25358b8f195/14be6/4e.png"/></picture>
+<!-- -->
+<p>上面的 <i>响应头Response headers</i>部分告诉我们一些信息，例如，响应的大小(以字节为单位)和响应的具体时间。 有个重要的 header <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-Type</a> 告诉我们，响应是<a href="https://en.wikipedia.org/wiki/UTF-8">utf-8</a> 格式的文本文件，其内容已用 HTML 格式化。 通过这种方式，浏览器知道响应是一个常规的 html 页面，并将它“像一个网页”一样渲染到浏览器中。</p>
+<!-- -->
+<p>Response 标签页展示了响应数据，这是一个常规的 html 页面。 <i>body</i>部分决定了其渲染在屏幕上的页面结构:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/4e49815c455c943b6eb14fe8cc0cefb3/14be6/5e.png"/></picture>
+<!-- -->
+<p>页面包含一个 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">div</a> 元素，该元素又包含一个标题、一个指向 notes 页面的链接，以及一个 img 标签，并显示了创建 note 的数量。</p>
+<!-- -->
+<p>由于有一个 img 标签，浏览器会执行第二个 http 请求，从服务器获取图像 kuba.png。 请求的详情如下:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/f053fa9082a1ad72066fa193346d0378/14be6/6e.png"/></picture>
+<!-- -->
+<p>这个请求是给地址 <a href="https://fullstack-exampleapp.herokuapp.com/kuva.png">https://fullstack-exampleapp.herokuapp.com/kuva.png</a> 发送的，它的类型是 HTTP GET。 响应头告诉我们，响应大小为 89350 字节，其<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type">Content-type</a>为 image/png，因此它是一个 png 图像。 浏览器使用这些信息将图像正确地渲染到屏幕上。</p>
+<!-- -->
+<p>在浏览器上打开页面 <a href="https://fullstack-exampleapp.herokuapp.com/">https://fullstack-exampleapp.herokuapp.com/</a> 所产生的整个调用链条如下:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/972354fefd202e82e2c4a64d4d7c6125/14be6/7e.png"/></picture>
+<!-- -->
+<p>首先，浏览器向服务器发出 HTTP GET 请求，以获取页面的 HTML 代码。 Html 中的 img 标签提示浏览器还要去获取图像 kuba.png。 浏览器将 HTML 页面和图像渲染到屏幕上。</p>
+<!-- -->
+<p>尽管很难观察到，但 HTML 页面在从服务器获取图像之前就已经开始渲染了。</p>
+<h3>Traditional web applications</h3>
+<p>【传统的网络应用】</p>
+<!-- -->
+<p>示例应用的主页运作方式与传统的 web 应用类似。 当进入一个页面时，浏览器会从服务器获取 HTML 文档的详细页面结构，以及文本内容。</p>
+<!-- -->
+<p>服务器以某种方式生成了这个文档。 这个文档可能是保存在服务器目录中的静态文本文件， 也可能是服务器根据应用的代码动态构建的 HTML 文档，比如，数据可能是来自数据库的。</p>
+<!-- -->
+<p>示例应用的 HTML 代码是动态的，因为它包含已创建 Note 的数量信息。</p>
+<!-- -->
+<p>主页的 HTML 代码如下所示:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">getFrontPageHtml</span> <span class="token operator">=</span> noteCount <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token string">`
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;div class=&#x27;container&#x27;&gt;
+          &lt;h1&gt;Full stack example app&lt;/h1&gt;
+          &lt;p&gt;number of notes created </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>noteCount<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/p&gt;
+          &lt;a href=&#x27;/notes&#x27;&gt;notes&lt;/a&gt;
+          &lt;img src=&#x27;kuva.png&#x27; width=&#x27;200&#x27; /&gt;
+        &lt;/div&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+`</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&#x27;/&#x27;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> page <span class="token operator">=</span> <span class="token function">getFrontPageHtml</span><span class="token punctuation">(</span>notes<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>page<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>你目前还不需要去理解这些代码的细节。</p>
+<!-- -->
+<p>Html 页面的内容被保存为 template 模板字符串，或者说是一个能够运行的字符串，因为它其中包含有变量。 在模板字符串中，页面中动态更改的那部分内容——已保存 Note 的数量（即代码中的 <em>noteCount</em>），被动态地替换为了 Note 的当前数量（即代码中的 <em>notes.length</em>）</p>
+<!-- -->
+<p>在代码中间编写 HTML 当然不是明智的做法，但对于老派的 PHP 程序员来说，这是一种常规操作。</p>
+<!-- -->
+<p>在传统的 web 应用中，浏览器是个“憨憨”。 它只会从服务器获取 HTML 数据，所有应用的逻辑都在服务器上处理。 服务器中的程序可以是，赫尔辛基大学 <a href="https://courses.helsinki.fi/fi/tkt21007/119558639">Web-palvelinohjelmointi</a>课程中的 Java Spring、也可以是 <a href="https://materiaalit.github.io/tsoha-18/">tietokantasovellus</a>课程中的 Python Flask ，又或者是 <a href="http://rubyonrails.org/">Ruby on Rails</a>。</p>
+<!-- -->
+<p>这个样例使用了 Node.js 中的 <a href="https://expressjs.com/">Express</a>。</p>
+<!-- -->
+<p>本课程都将会使用 Node.js 和 Express 来创建 Web 服务器。</p>
+<h3>Running application logic on the browser</h3>
+<p>【在浏览器上运行应用逻辑】</p>
+<!-- -->
+<p>保持控制台打开状态。 单击 🚫按钮清空控制台。</p>
+<!-- -->
+<p>现在当你进入 <a href="https://fullstack-exampleapp.herokuapp.com/notes">notes</a>页面时，浏览器会执行 4 个 HTTP 请求:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/02ed5b206f76e1f9bcf4ad3ffff8a2b4/14be6/8e.png"/></picture>
+<!-- -->
+<p>所有的请求都请求了不同的类型。 第一个请求的类型是 document。 也就是页面的 HTML 代码，看起来如下:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/8856aaf0012972e3b7d5b1dfc6aaa3f6/14be6/9e.png"/></picture>
+<!-- -->
+<!-- -->
+<p>当我们比较浏览器上显示的页面和服务器返回的 HTML 代码时，我们注意到这些代码并不包含 Note 列表的数据。 Html 的 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">head</a>部分 包含一个 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">script</a> 标签，它会让浏览器去 获取一个名为 main.js 的 JavaScript 文件。</p>
+<!-- -->
+<p>JavaScript 代码看起来像这样:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> xhttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xhttp<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> ul <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;ul&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ul<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&#x27;class&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> li <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;li&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      ul<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      li<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>note<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>ul<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+xhttp<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&#x27;GET&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;/data.json&#x27;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xhttp<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>代码的细节现在并不重要，穿插一些代码，是为了增加图像与文本的趣味性。我们将在<a href="/zh/part1">第1章</a>正式地开始编码。 本章节的示例代码实际上与本课程所要讲的编码技术毫无关系。</p>
+<!-- -->
+<blockquote>
+<p>有些人可能想问为什么要使用 xhttp 对象而不是使用现代的获取方法。 这是因为我们不想引入 promise 的概念，而且代码在这一章节只是二等公民。 在第 2 章节中，我们将回过头来用更加现代的方式来向服务器发送请求。</p>
+</blockquote>
+<!-- -->
+<p>在获取到 script 标签后，浏览器便立即开始执行 script 的代码。</p>
+<!-- -->
+<p>最后两行定义了让浏览器对服务器地址 /data.json 执行一个 HTTP GET 请求:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">xhttp<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&#x27;GET&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;/data.json&#x27;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xhttp<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>这是“Network”选项卡上显示 request 信息的最低要求。</p>
+<!-- -->
+<p>我们可以试着直接通过浏览器访问 <a href="https://fullstack-exampleapp.herokuapp.com/data.json">https://fullstack-exampleapp.herokuapp.com/data.json</a> 地址:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/cb83e4c1c89fd4bc662942457f30403e/14be6/10e.png"/></picture>
+<!-- -->
+<!-- -->
+<p>在这里我们找到了以 JSON 格式展示的 Note ，这就是Note的 “原始数据”。 默认配置下，浏览器不太擅长显示 json 格式的数据。 可以使用插件来处理 Json 格式。 例如，将 <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">JSONView</a> 安装到 Chrome，然后重新加载页面。 数据现在可以被更好地格式化展示出来了:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/fd335c19a19f2176040834b7c5533193/14be6/11e.png"/></picture>
+<!-- -->
+<p>因此，上面 notes 页面的 JavaScript 代码会下载包含 Note 列表的的 JSON 数据，并利用 Note 的内容构建出一个符号列表:</p>
+<!-- -->
+<p>构建是通过如下代码实现的:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> ul <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;ul&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ul<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&#x27;class&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> li <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;li&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  ul<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  li<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>note<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>ul<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>代码首先创建了一个带有 ul-标签 的无序列表...</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> ul <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;ul&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ul<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">&#x27;class&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>然后再为每个 Note 加上一个 li-标签。仅将每个 Note 的 content 字段变成了 li-标签 的内容，而原始数据的 timestamps 时间戳在这里并没派上用场。</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> li <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;li&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  ul<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  li<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>note<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>现在打开控制台上的 Console 标签:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/7b61ba46a7734400891ed78cf57011cb/14be6/12e.png"/></picture>
+<!-- -->
+<p>通过单击行首的小三角形，可以展开控制台上的文本。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/b6c827a56505ac8a9243162a448ada21/14be6/13e.png"/></picture>
+<!-- -->
+<p>控制台上能输出内容是因为代码中的 console.log 命令:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>responseText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>因此，在从服务器接收到数据之后，代码将其打印到了控制台。</p>
+<!-- -->
+<p>在整个课程中，你会经常用到 Console 选项卡和 Console.log 命令。</p>
+<h3>Event handlers and Callback functions</h3>
+<p>【事件处理和回调函数】</p>
+<!-- -->
+<p>这段代码的结构有点奇怪:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> xhttp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+xhttp<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// code that takes care of the server response</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+xhttp<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&#x27;GET&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;/data.json&#x27;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+xhttp<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>发送到服务器的请求放在了最后一行，但是处理响应的代码却在上面定义了。这是怎么回事？</p>
+<!-- -->
+<p>这一行中，</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">xhttp<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></code></pre></div>
+<!-- -->
+<p>onreadystatechange 这个事件处理程序是定义在 xhttp 对象上的，xhttp对象是用于执行请求的。当这个对象的状态发生改变时，浏览器调用了这个事件处理函数。 这个函数代码检查了 <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState">readyState</a> 是否等于 4(它描述了操作已完成的状态) ，以及响应的 HTTP 状态码是否为 200。</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">xhttp<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// code that takes care of the server response</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>这种调用事件处理程序的机制在 JavaScript 中非常常见。 事件处理函数被称为回调函数（<a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">callback</a> functions）。 应用代码并不直接调用函数本身，而是运行时环境（浏览器）会在事件发生时的适当时间调用函数。</p>
+<h3>Document Object Model or DOM</h3>
+<!-- -->
+<p>我们可以将 html 页面看作隐式树结构。</p>
+<pre>
+
+html
+  head
+    link
+    script
+  body
+    div
+      h1
+      div
+        ul
+          li
+          li
+          li
+      form
+        input
+        input
+</pre>
+<!-- -->
+<p>在控制台Elements选项卡中可以看到相同的树状结构。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/081eb2d1f52d2536382d5d3efe0bc87f/14be6/14e.png"/></picture>
+<!-- -->
+<p>浏览器的功能就是基于这种，把 HTML元素描述成一棵树的想法。</p>
+<!-- -->
+<p>文档对象模型(Document Object Model，DOM)是一个应用编程接口(Application Programming Interface，API) ，它支持对 web 页面对应的元素树进行编程修改。</p>
+<!-- -->
+<p>上一部分中介绍的 JavaScript 代码就是使用 DOM-API 向页面添加 Note 列表。</p>
+<!-- -->
+<p>下面的代码为变量 ul 创建了一个新节点，并向其添加一些子节点:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> ul <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;ul&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> li <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;li&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  ul<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  li<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>note<span class="token punctuation">.</span>content<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>最后，ul 变量的树分支被接到了整个页面的 HTML 树中的适当位置:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&#x27;notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>ul<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3>Manipulating the document-object from console</h3>
+<p>【从控制台中操作文档对象】</p>
+<!-- -->
+<p>Html 文档 DOM 树的最顶层节点称为文档<em>document</em>对象。 我们可以使用 DOM-API 在网页上执行各种操作。 您可以通过在控制台中键入 document 来访问文档对象:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/ac9364f4d597d187d271a1628a332e7d/14be6/15e.png"/></picture>
+<!-- -->
+<p>让我们从控制台向页面添加一个新的 Note。</p>
+<!-- -->
+<p>首先，我们从页面中获得 Note 列表，该列表位于页面的第一个 ul 元素中:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">list <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">&#x27;ul&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>然后创建一个新的 li 元素并添加一些文本内容:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">newElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&#x27;li&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+newElement<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">&#x27;Page manipulation from console is easy&#x27;</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>并将新的 li 元素添加到列表中:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">list<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>newElement<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/5971f5573de2bc91961f679e27430097/14be6/16e.png"/></picture>
+<!-- -->
+<p>虽然页面在浏览器上被更新了，这些更改不是永久性的。 如果页面重新加载，新的 Note 就消失了，因为更改并没有推送到服务器。 浏览器获取的 JavaScript 代码会总是基于 <a href="https://fullstack-exampleapp.herokuapp.com/data.json">https://fullstack-exampleapp.herokuapp.com/data.json</a> 的 JSON 数据来创建 Note 列表。</p>
+<h3>CSS</h3>
+<!-- -->
+<p>Notes 页面的 HTML 代码中 head 元素包含了一个 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">link</a> 标签，该标签确定浏览器必须从地址 <a href="https://fullstack-exampleapp.herokuapp.com/main.css">main.css</a>中获取 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a> 样式表。</p>
+<!-- -->
+<p>层叠样式表, 或者叫 CSS，是一种用来确定 web 应用外观的标记语言。</p>
+<!-- -->
+<p>获取的 css 文件如下所示:</p>
+<div class="gatsby-highlight" data-language="css"><pre><code class="language-css"><span class="token selector">.container</span> <span class="token punctuation">{</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.notes</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<!-- -->
+<p>该文件定义了两个类选择器 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">class selectors</a>。 它们用于选择页面的某些部分，并对它们定义样式规则来装饰它们。</p>
+<!-- -->
+<p>类选择器的定义始终以句点开头，并包含类的名称。</p>
+<!-- -->
+<p>这些类是属性<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">attributes</a>，可以添加到 HTML 元素中。</p>
+<!-- -->
+<p>CSS 属性可以在控制台的 element 标签上查看:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/4504fc2e95de826dd766aca1d0940ea4/14be6/17e.png"/></picture>
+<!-- -->
+<p>最外面的 div 元素有 class 属性 ，值为 container ，包含 notes 列表的 ul 元素也有 class 属性 ，名为 notes。</p>
+<!-- -->
+<p>CSS 规则定义了 container 类的元素，将用一个像素宽的边框 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">border</a>勾勒出来。 它还为该元素设置了 10 个像素的填充 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">padding</a>。 这会在元素内容和边框之间增加一些空白。</p>
+<!-- -->
+<p>第二个 CSS 规则将文本颜色设置为蓝色。</p>
+<!-- -->
+<p>Html 元素也可以有 class 以外的其他属性。 包含 Note 的 div 元素有一个 id 属性。 JavaScript 代码使用 id 来查找元素。</p>
+<!-- -->
+<p>控制台的<i>Elements</i>选项卡可用于更改元素的样式。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/ef664dbcddaeef64c5ff6e180e42e5ca/14be6/18e.png"/></picture>
+<!-- -->
+<p>在控制台上所做的更改也不是永久性的。 如果要进行持久的更改，必须将更改保存到服务器上的 CSS 样式表中。</p>
+<h3>Loading a page containing JavaScript - revised</h3>
+<p>【加载一个包含 JavaScript 的页面-复习】</p>
+<!-- -->
+<p>让我们复习一下在浏览器上打开页面 <a href="https://fullstack-exampleapp.herokuapp.com/notes">https://fullstack-exampleapp.herokuapp.com/notes</a> 时会发生什么。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/7094858c9c7ec9149d10607e9e1d94bb/14be6/19e.png"/></picture>
+<!-- -->
+<ul>
+<li>
+<p>浏览器使用 HTTP GET 请求从服务器获取定义内容和页面结构的 HTML 代码</p>
+<!-- -->
+</li>
+<li>
+<p>Html 代码中的 Links 标签会让浏览器获取 CSS 样式表 main.css</p>
+<!-- -->
+</li>
+<li>
+<p>以及 JavaScript 代码文件 main.js</p>
+<!-- -->
+</li>
+<li>
+<p>浏览器执行 JavaScript 代码，代码向地址<a href="https://fullstack-exampleapp.herokuapp.com/data.json%E5%8F%91%E5%87%BA">https://fullstack-exampleapp.herokuapp.com/data.json发出</a> HTTP GET 请求，请求返回了包含 note 的 JSON 数据。</p>
+<!-- -->
+</li>
+<li>获取数据后，浏览器执行一个<em>event handler 事件处理程序</em>, 使用 DOM-API 将 Note 渲染到页面</li>
+</ul>
+<h3>Forms and HTTP POST</h3>
+<p>【表单与 HTTP POST】</p>
+<!-- -->
+<p>接下来让我们看看添加 Note 是如何完成的。</p>
+<!-- -->
+<p>Notes 页面包含一个 <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form">form 元素</a></p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/2dbe9f6d3c9999766d2cbad6200fea40/14be6/20e.png"/></picture>
+<!-- -->
+<p>当单击表单上的按钮时，浏览器将向服务器发送用户的输入。 让我们打开 Network 标签页，看看提交表单时发生了什么:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/7951d2221d80f63a78350106150d5e61/14be6/21e.png"/></picture>
+<!-- -->
+<p>很惊奇吧，提交表单总共会导致 5 个 HTTP 请求。</p>
+<!-- -->
+<p>第一个是表单提交事件。 让我们放大一下:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/ac09c143991ad160bdaa1c1381d93f7b/14be6/22e.png"/></picture>
+<!-- -->
+<p>它是对服务器 <i>/new_note</i>地址发送的 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">HTTP POST</a>请求。 服务器用 HTTP 状态码 302 进行响应。 这是一个<a href="https://en.wikipedia.org/wiki/URL_redirection">URL 重定向</a>，服务器通过这个 URL 重定向，请求浏览器执行一个新的 HTTP GET 请求，该请求定义在 Header 的 Location (即 /notes 地址)中。</p>
+<!-- -->
+<p>因此，浏览器重新加载 Notes 页面。 重新加载会导致另外三个 HTTP 请求: 获取样式表(main.css)、 JavaScript 代码(main.js)和 notes 的原始数据(data.json)。</p>
+<!-- -->
+<p>Network选项卡还显示了与表单一起提交的表单数据:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/baad2297bb966ed9387cb3a0d79fa4f8/14be6/23e.png"/></picture>
+<!-- -->
+<p>Form 标签具有属性 action 和 method，它们定义了将表单作为一个 HTTP POST 请求提交到地址 <i>/new_note</i>。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/9463d1dca4170015c47e79065ff98820/14be6/24e.png"/></picture>
+<!-- -->
+<p>服务器上负责 POST 请求的代码很简单(注意: 此代码在服务器上，而不是在浏览器获取的 JavaScript 代码上) :</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">app<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">&#x27;/new_note&#x27;</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  notes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    content<span class="token punctuation">:</span> req<span class="token punctuation">.</span>body<span class="token punctuation">.</span>note<span class="token punctuation">,</span>
+    date<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> res<span class="token punctuation">.</span><span class="token function">redirect</span><span class="token punctuation">(</span><span class="token string">&#x27;/notes&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>数据作为 POST-请求的<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">body</a>发送到服务器。</p>
+<!-- -->
+<p>服务器可以通过访问请求对象 req 的 req.body 字段来访问发送来的数据。</p>
+<!-- -->
+<p>Server 创建一个新的 note 对象，并将其添加到一个名为 notes 的数组中。</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js">notes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  content<span class="token punctuation">:</span> req<span class="token punctuation">.</span>body<span class="token punctuation">.</span>note<span class="token punctuation">,</span>
+  date<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<!-- -->
+<p>Note 对象包含两个字段: 包含 Note 实际内容的 content，以及包含创建 Note 的日期和时间的 date。 服务器不会将新 Note 保存到数据库中，因此当 Heroku （Heroku是一个服务器，可以看做Tomcat，译者注）重新启动服务时，新的 Note 就会消失。</p>
+<h3>AJAX</h3>
+<!-- -->
+<p>应用的 Notes 页面遵循本世纪初的 web 开发风格，并且“使用了 Ajax”。 这种技术在当时，2000 年初正处于 web 技术浪潮的顶峰。</p>
+<!-- -->
+<p><a href="https://en.wikipedia.org/wiki/Ajax_(programming)">AJAX</a> (Asynchronous Javascript and XML) 是在浏览器技术进步的基础上于 2005 年 2 月引入的一个术语，它描述了一种新的革命性的方法，这种方法使用包含在 HTML 中的 JavaScript 来获取网页内容，而且不需要重新渲染页面。</p>
+<!-- -->
+<!-- -->
+<p>在 AJAX 之前的年代，所有的 web 页面都像我们在本章前面看到的传统 web 应用一样工作。 页面上显示的所有数据都是从服务器生成的 html 代码获取的。</p>
+<!-- -->
+<p>Notes 页面使用了 AJAX 获取 Notes 数据。 提交表单仍然使用传统的 web 表单提交机制。</p>
+<!-- -->
+<!-- -->
+<p>应用的 url 反映了过去无忧无虑的时光。 数据从 url <a href="https://fullstack-exampleapp.herokuapp.com/data.JSON">https://fullstack-exampleapp.herokuapp.com/data.JSON</a> 中获取，新的 Note 被发送到 url <a href="https://fullstack-exampleapp.herokuapp.com/new_note%E3%80%82">https://fullstack-exampleapp.herokuapp.com/new_note。</a> 如今，这样的 url 被认为是不可接受的，因为它们没有遵循公认的 RESTful api 约定，我们将在第三章中进一步研究</p>
+<!-- -->
+<p>现在 AJAX 这个术语是如此普遍，以至于人们认为它是理所当然的。 但这个词已经逐渐被遗忘，“新时代的我们”甚至没有听说过它。</p>
+<h3>Single page app</h3>
+<p>【单页面应用】</p>
+<!-- -->
+<p>在我们的示例应用中，主页的工作方式类似于传统的网页: 所有的逻辑都在服务器上，浏览器只按照指示渲染 HTML。</p>
+<!-- -->
+<p>Notes 页面为浏览器提供了一些职责，为现有的 Note 生成 HTML 代码。 浏览器通过执行从服务器获取的 JavaScript 代码来处理这个任务。 代码从服务器以Json格式获取 Note，并对其添加 HTML 元素，并利用 DOM-API 将 Note 显示到页面中。</p>
+<!-- -->
+<p>近年来，创建网络应用的单页应用 <a href="https://en.wikipedia.org/wiki/Single-page_application">Single-page application</a> (SPA) 风格出现了。SPA 类型的网站不会像我们的示例应用那样从服务器上单独获取所有页面，而是只从服务器获取一个 HTML 页面，其内容由 JavaScript 在浏览器中执行操作。</p>
+<!-- -->
+<p>我们的应用的 Notes 页面与 SPA 风格的应用有一些相似之处，但它还没有完全到位。 尽管显示Note 的逻辑是在浏览器上运行的，但页面仍然使用传统的方式添加新Note 。 数据通过表单提交发送到服务器，服务器指示浏览器重新加载带有重定向的 Notes 页面。</p>
+<!-- -->
+<!-- -->
+<!-- -->
+<p>我们示例应用的单页应用版本可以在 <a href="https://fullstack-exampleapp.herokuapp.com/spa">https://fullstack-exampleapp.herokuapp.com/spa</a> 中找到。 乍一看，这个应用看起来与前一个应用完全相同。 Html 代码几乎完全相同，但 JavaScript 文件不同(spa.js) ，form 标签的定义方式有一个小小的变化:</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/cb1893b2f18168168b3337ef994f0347/14be6/25e.png"/></picture>
+<!-- -->
+<p>表单没有<i>action</i>属性或<i>method</i>属性来定义如何以及往哪里发送输入数据。</p>
+<!-- -->
+<p>打开 Network-选项卡并通过单击 🚫 按钮清空它。 当您现在创建一个新的便笺时，您会注意到浏览器只向服务器发送了一个请求。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/07beb53097a520517c1c28ff17fc907a/14be6/26e.png"/></picture>
+<!-- -->
+<p>Post 请求到地址<i>new_note_spa</i>，包含新 Note 的 JSON 数据，其中既包含 Note 的内容(content) ，也包含时间戳(date) :</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token punctuation">{</span>
+  content<span class="token punctuation">:</span> <span class="token string">&quot;single page app does not reload the whole page&quot;</span><span class="token punctuation">,</span>
+  date<span class="token punctuation">:</span> <span class="token string">&quot;2019-05-25T15:15:59.905Z&quot;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<!-- -->
+<p>请求的 Content-Type 头信息告诉服务器，所包含的数据是以 JSON 格式表示的。</p>
+<picture><img style="border-color:#B2BBF0" alt="fullstack content" src="/static/5819436c98e4cce143fce3fe9bc534b9/14be6/27e.png"/></picture>
+<!-- -->
+<p>如果没有这个头，服务器将不知道如何正确地解析数据。</p>
+<!-- -->
+<p>服务器用创建的状态码<a href="https://httpstatuses.com/201">201</a>进行响应。 这次服务器没有请求重定向，浏览器会保持在同一页面上，并且不再发送 http 请求。</p>
+<!-- -->
+<!-- -->
+<p>这个应用的 SPA 版本并不以传统的方式发送表单数据，而是使用从服务器获取的 JavaScript 代码。 我们将稍微研究一下这段代码，虽然还没有必要理解它的所有细节。</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> form <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&#x27;notes_form&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+form<span class="token punctuation">.</span><span class="token function-variable function">onsubmit</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">var</span> note <span class="token operator">=</span> <span class="token punctuation">{</span>
+    content<span class="token punctuation">:</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>elements<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+    date<span class="token punctuation">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  notes<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>elements<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">&#x27;&#x27;</span><span class="token punctuation">;</span>
+  <span class="token function">redrawNotes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">sendToServer</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>命令  <em>document.getElementById(&#x27;notes_form&#x27;)</em> 指示代码从页面中提取 form 元素，并注册一个事件处理函数来处理表单提交事件。 事件处理函数将立即调用方法 e.preventDefault () ，以防止对表单 submit 的默认处理。 默认处理会将数据发送到服务器并导致重定向（一次新的Get请求），这不是我们的初衷。</p>
+<!-- -->
+<p>然后，事件处理程序创建一个新的 Note，使用命令<em>notes.push(note)</em>将其添加到 Note 列表中，并在页面上重新渲染了 Note 列表，最终向服务器发送了新建 Note 的请求。</p>
+<!-- -->
+<p>向服务器发送 Note 的代码如下:</p>
+<div class="gatsby-highlight" data-language="js"><pre><code class="language-js"><span class="token keyword">var</span> <span class="token function-variable function">sendToServer</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> xhttpForPost <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// ...</span>
+
+  xhttpForPost<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&#x27;POST&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;/new_note_spa&#x27;</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  xhttpForPost<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">&#x27;Content-type&#x27;</span><span class="token punctuation">,</span> <span class="token string">&#x27;application/json&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  xhttpForPost<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>note<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<!-- -->
+<p>代码确定数据是通过 HTTP POST 请求发送的，数据类型是 JSON。 数据类型由 Content-type Header 确定。 然后，数据以 json 字符串的形式发送。</p>
+<!-- -->
+<!-- -->
+<p>应用代码可以在 <a href="https://github.com/mluukkai/example_app">https://github.com/mluukkai/example_app</a> 上找到。 值得注意的是，这个应用只是用来演示课程的概念。 该代码在某种程度上遵循了糟糕的开发风格，不应该在创建自己的应用时作为示例使用。 使用的 url 也是如此。 发送新Note 的 URL，即新建Note 的<i>new_note_spa</i>并不遵循当前的最佳实践。</p>
+<h3>Javascript-libraries</h3>
+<p>【Javascript 库】</p>
+<!-- -->
+<p>这个示例应用是通过所谓的<a href="https://medium.freecodecamp.org/is-vanilla-javascript-worth-learning-absolutely-c2c67140ac34">vanilla Javascript</a> 来完成的，只使用了 DOM-API 和 Javascript 来操作页面的结构。</p>
+<!-- -->
+<p>与仅使用 JavaScript 和 DOM-API 不同，通常会使用比直接操作 DOM-API 更容易的工具库来操作页面。 其中一个非常流行的库就是 <a href="https://jquery.com/">JQuery</a> 。</p>
+<!-- -->
+<p>当时，在 web 应用主要遵循服务器生成 HTML 页面的传统风格，JQuery 当时是在这种情况下发展起来的。这种风格的功能通过在浏览器端使用 JavaScript 搭配使用 JQuery 来增强。 JQuery 成功的原因之一是它所谓的跨浏览器兼容性。 不管是哪家公司的哪个浏览器，这个库都能正常工作，所以不需要特定于浏览器的解决方案。 如今，由于 VanillaJS 的进步，使用 JQuery 已经不那么合理了，而且最流行的浏览器通常都能很好地支持基本功能。</p>
+<!-- -->
+<p>单页应用的兴起带来了几种比 JQuery 更“现代”的网页开发方式。 第一波开发者的最爱是 <a href="http://backbonejs.org/">BackboneJS</a>.。 自 2012 年 <a href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#100-temporal-domination-2012-06-13">launch</a> 以来，谷歌的 <a href="https://angularjs.org/">AngularJS</a> 几乎快速成为现代网络开发的行业标准。</p>
+<!-- -->
+<p>然而，自从 Angular 团队在 2014 年 10 月宣布对第 1 版的支持将结束，Angular 2 将不再向后兼容第一版后，Angular 的受欢迎程度直线下降。 Angular 2 和更新的版本没有得到太热烈的欢迎。</p>
+<!-- -->
+<!-- -->
+<p>目前，实现 web 应用浏览器端逻辑的最流行的工具是 Facebook 的 React-库。 在本课程中，我们将熟悉 React 和 <a href="https://github.com/reactjs/redux">Redux</a> 库，它们经常一起使用。</p>
+<!-- -->
+<p>React 的势头看起来很猛，但是 JavaScript 的世界是不断变化的。 例如，最近的一个新秀 <a href="https://vuejs.org/">VueJS</a> 已经引起了一些兴趣。</p>
+<h3>Full stack -web development</h3>
+<p>【全栈-web 开发】</p>
+<!-- -->
+<p>这个课程的名字是什么意思？全栈是一个流行词，每个人都在谈论它，但没有人真正知道它的意思。 或者至少，对于这个术语没有一致的定义。</p>
+<!-- -->
+<p>几乎所有的 web 应用都有(至少)两个“层” : 最接近最终用户的浏览器是最顶层，而服务器是最底层。 在服务器下面通常还有一个数据库层。 因此，我们可以将 web 应用的体系结构看作是一层层的堆栈。</p>
+<!-- -->
+<p>通常，我们也会讨论<a href="https://en.wikipedia.org/wiki/Front_and_back_ends">前端frontend</a> 和 <a href="https://en.wikipedia.org/wiki/Front_and_back_ends">后端backend</a>。 浏览器是前端，运行在浏览器上的 JavaScript 是前端代码。 另一方面，服务器是后端。</p>
+<!-- -->
+<p>在本课程的上下文中，全栈 web 开发意味着我们关注应用的所有部分: 从前端、后端到数据库。 有时候，服务器上的软件及其操作系统会被看作是全栈的一部分，但我们不会深入讨论这部分内容。</p>
+<!-- -->
+<p>我们将使用 JavaScript 编写后端代码，使用 <a href="https://nodejs.org/en/">Node.js</a> 运行时环境。 在全栈的多个层次上使用相同的编程语言，给全栈 web 开发提供了一个全新的维度。 然而，对于所有层次的栈，使用相同的编程语言(JavaScript)并不是全栈 web 开发的必要条件。</p>
+<!-- -->
+<p>过去，对于开发人员来说，更常见的做法是专注于全栈的某个层，例如后端。 后端和前端的技术栈完全不同。 随着全栈趋势的出现，对于开发人员来说，熟练掌握应用和数据库的全栈内容已经变得非常普遍。 通常情况下，全栈开发人员还必须有足够的配置和管理技能来操作他们的应用，例如，上云。</p>
+<h3>Javascript fatigue</h3>
+<p>【Javascript 疲劳】</p>
+<!-- -->
+<p>全栈 web 开发在许多方面都具有挑战性。 在许多地方会有突发情况，并且调试起来比普通桌面应用要困难得多。 Javascript (与许多其他语言相比) 并不总是像你期望的那样工作 ，其运行时环境的异步工作方式带来了各种各样的挑战。 网络中的通信需要对 http 协议的知识储备。 还必须处理数据库、服务器管理和配置。 了解足够的 CSS 至少在一定程度上能够使应用显得好看。</p>
+<!-- -->
+<p>JavaScript 的世界发展得很快，也带来了一系列的挑战。 工具、库和语言本身都在不断发展。 有些人已经开始厌倦了这种不断的变化，并为此创造了一个新词: Javascript 疲劳。</p>
+<!-- -->
+<p>在本课程中，您将遭受 JavaScript 疲劳的折磨。 对我们来说幸运的是，有几种方法可以使学习曲线变得平滑，我们可以从编码而不是配置开始。 我们不能完全避免配置，但是我们可以在接下来的几周里愉快地推进，同时避免糟糕的配置地狱。</p>
+</div></div>
+<div class="banner spacing spacing--after tasks" style="background-color:#B2BBF0"><div class="container"><div class="course-content col-6 push-right-3" style="border-color:#B2BBF0;background-color:transparent"> 
+  <h3>Exercises 0.1.-0.6.</h3>
+<!-- -->
+<p>这些练习是通过 GitHub 提交的，并在<a href="https://studies.cs.helsinki.fi/stats/courses/fullstackopen">submission system</a>中将练习标记为已完成。</p>
+<!-- -->
+<p>您可以将本课程的所有练习提交到同一个仓库，或者使用多个不同的仓库。 如果您将来自不同章节的练习提交到同一个仓库中，请使用一个合理的目录命名方案。 如果您使用私有库进行提交练习，那么添加 mluukkai 作为 collaborator。</p>
+<!-- -->
+<p>提交仓库中，一个好的命名目录的方法如下:</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">part0
+part1
+  courseinfo
+  unicafe
+  anecdotes
+part2
+  phonebook
+  countries</code></pre></div>
+<!-- -->
+<p>这样，每个章节都有自己的目录，其中包含每个练习集的目录(如第 1 章中的 unicafe 练习)。</p>
+<!-- -->
+<p>练习的上交规则为，一次上交一个章节。 当你已经上交了一个章节的练习，你不能再上交任何那一章节错过的练习。</p>
+  <h4>0.1: HTML</h4>
+<!-- -->
+<p>通过阅读 Mozilla 的<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML tutorial</a>来回顾 HTML 的基础知识。</p>
+<!-- -->
+<p>这个练习并不用提交到 GitHub，只需要阅读教程就足够了</p>
+  <h4>0.2: CSS</h4>
+<!-- -->
+<p>通过阅读 Mozilla 的<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS tutorial</a>.来回顾 CSS 的基础知识。</p>
+<!-- -->
+<p>这个练习并不用提交到 GitHub，只需要阅读教程就足够了</p>
+  <h4>0.3: HTML forms</h4>
+<!-- -->
+<p>通过阅读 Mozilla 的 <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form">Your first form</a>教程了解 HTML 表单的基础知识。</p>
+<!-- -->
+<p>这个练习并不用提交到 GitHub，只需要阅读教程就足够了</p>
+  <h4>0.4: new note</h4>
+<!-- -->
+<p>在  <a href="/zh/part0/web_%E5%BA%94%E7%94%A8%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD#loading-a-page-containing-java-script-revised">加载一个包含 JavaScript 的页面 - 复习</a>这一章中，页面打开 <a href="https://fullstack-exampleapp.herokuapp.com/notes">https://fullstack-exampleapp.herokuapp.com/notes</a> 时引起的事件链被描述为一个时序图</p>
+<!-- -->
+<p>该图是使用 <a href="https://www.websequencediagrams.com">websequencediagrams</a> 服务绘制的，如下所示:</p>
+<div class="gatsby-highlight" data-language="text"><pre><code class="language-text">browser-&gt;server: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+server--&gt;browser: HTML-code
+browser-&gt;server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+server--&gt;browser: main.css
+browser-&gt;server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+server--&gt;browser: main.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server
+end note
+
+browser-&gt;server: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+server--&gt;browser: [{ content: &quot;HTML is easy&quot;, date: &quot;2019-05-23&quot; }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note</code></pre></div>
+<!-- -->
+<p>创建一个类似的图表，描述这种情况: 用户在页面上创建一个新的 Note，在文本区域写一些东西，然后点击提交按钮到 <a href="https://fullstack-exampleapp.herokuapp.com/notes%E3%80%82">https://fullstack-exampleapp.herokuapp.com/notes。</a></p>
+<!-- -->
+<p>如有必要，将浏览器或服务器上的操作显示为图表上的注释。</p>
+<!-- -->
+<p>这个图表不一定要是一个时序图，任何合理的方式来表达这些事件都是可行的。</p>
+<!-- -->
+<!-- -->
+<p>为了做出这张图，以及完成接下来的两个练习，所有必要的信息，可以从<a href="/zh/part0/web_%E5%BA%94%E7%94%A8%E7%9A%84%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD#forms-and-http-post">这一章节</a>的文本中找到。 这些练习的目的是再次阅读课文，并思考在哪里发生了什么。 阅读应用代码不是强制的，但是当然是可行的。</p>
+  <h4>0.5: Single page app</h4>
+<!-- -->
+<p>创建一个图表，描述用户在进入 <a href="https://fullstack-exampleapp.herokuapp.com/spa">https://fullstack-exampleapp.herokuapp.com/spa</a> 这个 Note 应用的单页版本的情况。</p>
+  <h4>0.6: New note</h4>
+<!-- -->
+<p>创建一个图表描述如下情况，用户使用应用的 SPA 版本创建一个新的Note 。</p>
+<!-- -->
+<p>这是最后一个练习，是时候将你的答案推送到 GitHub，并在<a href="https://studies.cs.helsinki.fi/stats/courses/fullstackopen">提交系统</a>将练习标记为已完成。</p>
+</div></div></div></div><div class="container spacing element--flex element--centered"><a class="edit-link" target="__BLANK" href="https://github.com/RichardStark/fullstack-hy2020.github.io/edit/source/src/content/0/zh/part0b.md"><span>对讲课材料提出建议</span></a></div><div class="container spacing spacing--after-large prev-next__container "><a class="col-4--mobile push-right-1 prev" href="/zh/part0/基础知识"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->0a</p><b>上一部分</b></div></a><a class="col-4--mobile push-left-1 next" href="/zh/part1"><div class=" element--flex element--column"><p>Part<!-- --> <!-- -->1</p><b>下一部分</b></div></a></div></div><div class="container spacing--after-small spacing--mobile element--flex" id="footer"><div class="col-5 push-right-3 col-10--mobile order-2--mobile order-2--tablet footer__links element--flex element--space-between"><a href="https://www.helsinki.fi/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="/static/uoh_centre-3689cf9983a2ebc8089c8f078a9c4769.svg" alt="Helsingin yliopiston logo"/></div></div></a><a href="https://www.houston-inc.com/" class="col-5 col-4--mobile spacing--mobile"><div class="image col-6 image--contain"><div class="image__container"><img style="background-color:;background-opacity:0.5" class="image__content" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQ3cHgiIGhlaWdodD0iODJweCIgdmlld0JveD0iMCAwIDI0NyA4MiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNTMuMiAoNzI2NDMpIC0gaHR0cHM6Ly9za2V0Y2hhcHAuY29tIC0tPgogICAgPHRpdGxlPmxvZ28vaG91c3RvbjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPgogICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoLTEiIHBvaW50cz0iMCAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAwLjAyNjcxOTI2NzMgMTM4LjIwODE2NyAzNi40NjU0MzgxIDAgMzYuNDY1NDM4MSI+PC9wb2x5Z29uPgogICAgPC9kZWZzPgogICAgPGcgaWQ9ImxvZ28vaG91c3RvbiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImhvdXN0b25fc2ltcGxlLmVwcy1jb3B5LTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LjU4MTg5MywgMjMuMjYzMDQwKSI+CiAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgIDwvbWFzaz4KICAgICAgICAgICAgPGcgaWQ9IkNsaXAtMiI+PC9nPgogICAgICAgICAgICA8cGF0aCBkPSJNODIuODA1MTI5OCwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDI1LjUzNjU1MDkgTDg1Ljk5MzYyOSwyNS41MzY1NTA5IEw4NS45OTM2MjksMTMuNTA2NjYwMyBMOTAuNDA2NTQ5MywxMy41MDY2NjAzIEw5MC40MDY1NDkzLDEwLjQ0NTY3ODQgTDc4LjM3NTEwMzYsMTAuNDQ1Njc4NCBMNzguMzc1MTAzNiwxMy41MDY2NjAzIEw4Mi44MDUxMjk4LDEzLjUwNjY2MDMgWiBNOTYuNDkxMDQ5NSwxNy45NjM2ODg1IEM5Ni40OTEwNDk1LDIwLjU1OTU1NzIgOTguMzE3ODU1NywyMi43MDc5ODQyIDEwMC44ODYxNTcsMjIuNzA3OTg0MiBDMTAzLjQ1NDg4MiwyMi43MDc5ODQyIDEwNS4yNDcxOTQsMjAuNTk1NDY1NyAxMDUuMjQ3MTk0LDE4LjAxNzk3NTMgTDEwNS4yNDcxOTQsMTguMDAwMDIxMSBDMTA1LjI0NzE5NCwxNS40MDQyOTM3IDEwMy40MjA1MjksMTMuMjU1ODY2NyAxMDAuODUyMjI4LDEzLjI1NTg2NjcgQzk4LjI4MzUwMjMsMTMuMjU1ODY2NyA5Ni40OTEwNDk1LDE1LjM2ODM4NTMgOTYuNDkxMDQ5NSwxNy45NDU3MzQzIEw5Ni40OTEwNDk1LDE3Ljk2MzY4ODUgWiBNOTMuMTQ3MDQxMywxOC4wMTc5NzUzIEw5My4xNDcwNDEzLDE3Ljk4MjA2NjkgQzkzLjE0NzA0MTMsMTMuNjg1NDk1NiA5Ni40MDQ4MTI3LDEwLjE3NjkzMDYgMTAwLjg4NjE1NywxMC4xNzY5MzA2IEMxMDUuMzY3OTI1LDEwLjE3NjkzMDYgMTA4LjU5MTM0MywxMy42NDk3Mjg1IDEwOC41OTEzNDMsMTcuOTQ1NzM0MyBMMTA4LjU5MTM0MywxNy45NjM2ODg1IEMxMDguNTkxMzQzLDIyLjI2MDI1OTggMTA1LjMzMzU3MiwyNS43Njg4MjQ3IDEwMC44NTIyMjgsMjUuNzY4ODI0NyBDOTYuMzcwMzE4LDI1Ljc2ODgyNDcgOTMuMTQ3MDQxMywyMi4zMTQxMjI0IDkzLjE0NzA0MTMsMTguMDE3OTc1MyBMOTMuMTQ3MDQxMywxOC4wMTc5NzUzIFogTTcwLjQxMTkxMzcsMjIuNzk3MDQ4NSBDNjguNzU2ODc0MiwyMi43OTcwNDg1IDY3LjM3ODIxNjYsMjIuMDgxMjgzMSA2Ni4wNjg0MDcsMjAuOTcxNzk3NCBMNjQuMTcyMTg3MiwyMy4zMTY0NDg0IEM2NS45MTMxODA4LDI0LjkyNzk0NTQgNjguMTM2Njc2MiwyNS43MzMzNDA0IDcwLjM0MzA2NTYsMjUuNzMzMzQwNCBDNzMuNDgwMTA1NSwyNS43MzMzNDA0IDc1LjY2OTI0NzYsMjQuMDUwMTY4IDc1LjY2OTI0NzYsMjEuMDYxMDAzIEw3NS42NjkyNDc2LDIxLjAyNTA5NDUgQzc1LjcyMTEzMSwxOC4zOTM0NTg4IDc0LjA0ODU2MTUsMTcuMzAxNzg1OCA3MS4xMDExMDExLDE2LjQ5NTgyNTMgQzY4LjU4NDY4MzQsMTUuODMzOTIyNiA2Ny45NjM5MTk5LDE1LjUxMTMxMjIgNjcuOTYzOTE5OSwxNC41MDg5ODYyIEw2Ny45NjM5MTk5LDE0LjQ3MzA3NzggQzY3Ljk2MzkxOTksMTMuNzM4OTM0MSA2OC42MDIyMTM1LDEzLjE2NjY2MTEgNjkuODI1NjQ0OSwxMy4xNjY2NjExIEM3MS4wNDk2NDE4LDEzLjE2NjY2MTEgNzIuMzA3OTkyMSwxMy43MjA5Nzk5IDczLjYwMDgzNywxNC42NTIwNTQ1IEw3NS4yNTU1OTM4LDEyLjE0NTk1NjkgQzczLjc4OTk5MjUsMTAuOTEwNjUwMiA3MS45ODA3MTY0LDEwLjIzMDM2OTIgNjkuODYwNTYzNywxMC4yMzAzNjkyIEM2Ni44OTU3MTQ3LDEwLjIzMDM2OTIgNjQuNzc1NTYyLDEyLjAzODY1NTcgNjQuNzc1NTYyLDE0Ljc3NzU5MjYgTDY0Ljc3NTU2MiwxNC44MTMwNzY5IEM2NC43NzU1NjIsMTcuODAyNjY2MSA2Ni42NzEwNzQ5LDE4LjY0NDUzNSA2OS41ODQxODE5LDE5LjQzMjExNzMgQzcyLjAxNDY0NTYsMjAuMDc2NjMxMiA3Mi41MTQ2Nzc2LDIwLjUwNjI2MDEgNzIuNTE0Njc3NiwyMS4zNDc3MDQ5IEw3Mi41MTQ2Nzc2LDIxLjM4MzA0NzkgQzcyLjUxNDY3NzYsMjIuMjYwMjU5OCA3MS43MjIyODg4LDIyLjc5NzA0ODUgNzAuNDExOTEzNywyMi43OTcwNDg1IEw3MC40MTE5MTM3LDIyLjc5NzA0ODUgWiBNMzEuMzM2NDY5NywxNy45NjM2ODg1IEMzMS4zMzY0Njk3LDIwLjU1OTU1NzIgMzMuMTYzNywyMi43MDc5ODQyIDM1LjczMTg1OTksMjIuNzA3OTg0MiBDMzguMzAwMTYxMSwyMi43MDc5ODQyIDQwLjA5MjQ3MjYsMjAuNTk1NDY1NyA0MC4wOTI0NzI2LDE4LjAxNzk3NTMgTDQwLjA5MjQ3MjYsMTguMDAwMDIxMSBDNDAuMDkyNDcyNiwxNS40MDQyOTM3IDM4LjI2NTI0MjMsMTMuMjU1ODY2NyAzNS42OTY5NDEsMTMuMjU1ODY2NyBDMzMuMTI5MjA1MywxMy4yNTU4NjY3IDMxLjMzNjQ2OTcsMTUuMzY4Mzg1MyAzMS4zMzY0Njk3LDE3Ljk0NTczNDMgTDMxLjMzNjQ2OTcsMTcuOTYzNjg4NSBaIE0yOC4wMDk3MDg5LDE4LjAxNzk3NTMgTDI4LjAwOTcwODksMTcuOTgyMDY2OSBDMjguMDA5NzA4OSwxMy42ODU0OTU2IDMxLjI2NzQ4MDMsMTAuMTc2OTMwNiAzNS43NDg4MjQ1LDEwLjE3NjkzMDYgQzQwLjIzMDczNDIsMTAuMTc2OTMwNiA0My40MzYxOTgsMTMuNjQ5NzI4NSA0My40NTQwMTA5LDE3Ljk0NTczNDMgTDQzLjQ1NDAxMDksMTcuOTYzNjg4NSBDNDMuNDU0MDEwOSwyMi4yNjAyNTk4IDQwLjE5NjIzOTUsMjUuNzY4ODI0NyAzNS43MTQ4OTUzLDI1Ljc2ODgyNDcgQzMxLjIzMjU2MTUsMjUuNzY4ODI0NyAyOC4wMDk3MDg5LDIyLjMxNDEyMjQgMjguMDA5NzA4OSwxOC4wMTc5NzUzIEwyOC4wMDk3MDg5LDE4LjAxNzk3NTMgWiBNNTMuODMwNDE3MSwyNS43MzMzNDA0IEM1Ny43NDI4ODEyLDI1LjczMzM0MDQgNjAuMjA3ODM5NywyMy40OTU4NDkyIDYwLjIwNzgzOTcsMTguOTMwNjcxNSBMNjAuMjA3ODM5NywxMC40MjcxNTg3IEw1Ny4wMDE4MTAzLDEwLjQyNzE1ODcgTDU3LjAwMTgxMDMsMTkuMDczNzM5OCBDNTcuMDAxODEwMywyMS40NzI2Nzc2IDU1LjgxMjMwODEsMjIuNjkwMDMgNTMuODY0NzcwNCwyMi42OTAwMyBDNTEuOTE3Mzc0MSwyMi42OTAwMyA1MC43Mjc3MzA1LDIxLjQxODk1NjMgNTAuNzI3NzMwNSwxOC45NjY1OCBMNTAuNzI3NzMwNSwxMC40MjcxNTg3IEw0Ny41Mzg2NjU4LDEwLjQyNzE1ODcgTDQ3LjUzODY2NTgsMTkuMDM3ODMxMyBDNDcuNTM4NjY1OCwyMy40Nzc4OTUgNDkuOTE3OTUzLDI1LjczMzM0MDQgNTMuODMwNDE3MSwyNS43MzMzNDA0IEw1My44MzA0MTcxLDI1LjczMzM0MDQgWiBNMy4xNTQ1NywzMy4xOTgxOTQ4IEwxMzUuMDM2NjMyLDMzLjE5ODE5NDggTDEzNS4wMzY2MzIsMy4zMDI0NDQ4OCBMMy4xNTQ1NywzLjMwMjQ0NDg4IEwzLjE1NDU3LDMzLjE5ODE5NDggWiBNMCwzNi40NzM5MjA0IEwxMzguMjA4MTY3LDM2LjQ3MzkyMDQgTDEzOC4yMDgxNjcsMC4wMjY3MTkyNjczIEwwLDAuMDI2NzE5MjY3MyBMMCwzNi40NzM5MjA0IFogTTE0LjgyMzExNDMsMTkuNDg1NDE0NCBMMjAuNzE4NjAwNSwxOS40ODU0MTQ0IEwyMC43MTg2MDA1LDI1LjUzNjU1MDkgTDIzLjkwNzY2NTIsMjUuNTM2NTUwOSBMMjMuOTA3NjY1MiwxMC40NDU2Nzg0IEwyMC43MTg2MDA1LDEwLjQ0NTY3ODQgTDIwLjcxODYwMDUsMTYuNDA2MDU0MiBMMTQuODIzMTE0MywxNi40MDYwNTQyIEwxNC44MjMxMTQzLDEwLjQ0NTY3ODQgTDExLjYzNDc1NjUsMTAuNDQ1Njc4NCBMMTEuNjM0NzU2NSwyNS41MzY1NTA5IEwxNC44MjMxMTQzLDI1LjUzNjU1MDkgTDE0LjgyMzExNDMsMTkuNDg1NDE0NCBaIE0xMTUuODY0OTIyLDE1Ljk0MTUwNjUgTDEyMi44OTc2MDIsMjUuNTM2NTUwOSBMMTI1LjYyMDk4OCwyNS41MzY1NTA5IEwxMjUuNjIwOTg4LDEwLjQ0NTY3ODQgTDEyMi40NjY0MTgsMTAuNDQ1Njc4NCBMMTIyLjQ2NjQxOCwxOS43MzYyMDggTDExNS42NTgzNzcsMTAuNDQ1Njc4NCBMMTEyLjcxMDkxNywxMC40NDU2Nzg0IEwxMTIuNzEwOTE3LDI1LjUzNjU1MDkgTDExNS44NjQ5MjIsMjUuNTM2NTUwOSBMMTE1Ljg2NDkyMiwxNS45NDE1MDY1IEwxMTUuODY0OTIyLDE1Ljk0MTUwNjUgWiIgaWQ9IkZpbGwtMSIgZmlsbD0iIzAwMDEwNSIgbWFzaz0idXJsKCNtYXNrLTIpIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" alt="Houston inc. logo"/></div></div></a></div><div class="col-5 col-5--mobile order-1--mobile order-1--tablet footer__navigation element--flex"><div class="footer__navigation-link-container"><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/about">关于课程</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh#course-contents">课程内容</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/faq">常见问题</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/companies">合作伙伴</a><a class="footer__navigation-link nav-item-hover" style="margin-left:4.5rem" href="/zh/challenge">挑战</a></div></div></div></div></div></div><script>
+  
+  
+  if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135975842-1', 'fullstackopen.com', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-content-template-js","jsonName":"zh-part-0-web-应用的基础设施-81b","path":"/zh/part0/web_应用的基础设施"};window.dataPath="159/path---zh-part-0-web-应用的基础设施-81-b-7b8-XhHou5tZNOZfKoVq6jf1kObxva0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app.f588656cc80a065e5f1e.css","/app-dbdb69583e4e0882e26f.js"],"component---src-templates-part-intro-template-js":["/component---src-templates-part-intro-template-js.8d664019b0db737497c8.css","/component---src-templates-part-intro-template-js-d53442d86627263c44f9.js"],"component---src-templates-content-template-js":["/component---src-templates-content-template-js.5b9815b7eff38446cec6.css","/component---src-templates-content-template-js-565726ad77dd2a7cbd59.js"],"component---src-pages-404-js":["/component---src-pages-404-js.6480c5a0a269a417cf42.css","/component---src-pages-404-js-30721f6bde71805f4296.js"],"component---src-pages-about-en-js":["/component---src-pages-about-en-js.bdf0fc12ef3fe8eec798.css","/component---src-pages-about-en-js-bb51ffa94b72a51422d0.js"],"component---src-pages-about-js":["/component---src-pages-about-js.bdf0fc12ef3fe8eec798.css","/component---src-pages-about-js-0683d1a3a0f2bd58f361.js"],"component---src-pages-about-zh-js":["/component---src-pages-about-zh-js.bdf0fc12ef3fe8eec798.css","/component---src-pages-about-zh-js-6ff2f09dc1373896b7fc.js"],"component---src-pages-challenge-en-js":["/component---src-pages-challenge-en-js.32920be992684997e003.css","/component---src-pages-challenge-en-js-72c57618550467f93022.js"],"component---src-pages-challenge-js":["/component---src-pages-challenge-js.32920be992684997e003.css","/component---src-pages-challenge-js-472accb4aa5c7f0d5271.js"],"component---src-pages-challenge-zh-js":["/component---src-pages-challenge-zh-js.32920be992684997e003.css","/component---src-pages-challenge-zh-js-1f1476d711863124d0ac.js"],"component---src-pages-companies-en-js":["/component---src-pages-companies-en-js.9a96b07212cab2723d68.css","/component---src-pages-companies-en-js-0afffff8cab31eafe881.js"],"component---src-pages-companies-js":["/component---src-pages-companies-js.9a96b07212cab2723d68.css","/component---src-pages-companies-js-d771d42f74b6531f539f.js"],"component---src-pages-companies-zh-js":["/component---src-pages-companies-zh-js.9a96b07212cab2723d68.css","/component---src-pages-companies-zh-js-179660844bd8139c5498.js"],"component---src-pages-faq-en-js":["/component---src-pages-faq-en-js-b07b730a2f52b71504a2.js"],"component---src-pages-faq-js":["/component---src-pages-faq-js-1df83142e073bdb94269.js"],"component---src-pages-faq-zh-js":["/component---src-pages-faq-zh-js-6cd548546f23c2a5d47c.js"],"component---src-pages-index-en-js":["/component---src-pages-index-en-js.363b7cf9361f88d1ae8a.css","/component---src-pages-index-en-js-4a41a13f161b0b2b5a3e.js"],"component---src-pages-index-js":["/component---src-pages-index-js.363b7cf9361f88d1ae8a.css","/component---src-pages-index-js-167a2df85fd8123fd87a.js"],"component---src-pages-index-zh-js":["/component---src-pages-index-zh-js.363b7cf9361f88d1ae8a.css","/component---src-pages-index-zh-js-1243aade69e4b89b9d13.js"]};/*]]>*/</script><script src="/webpack-runtime-8aefae32aca239e39749.js" async=""></script><script src="/1-401b18a85cef7ebf689f.js" async=""></script><script src="/3-e6eadd5caaf780c27e9b.js" async=""></script><script src="/27-54c17c6fd292fad28b57.js" async=""></script><script src="/0-7cc0090a88faee2ea8c5.js" async=""></script><script src="/component---src-templates-content-template-js-565726ad77dd2a7cbd59.js" async=""></script><script src="/app-dbdb69583e4e0882e26f.js" async=""></script></body></html>
